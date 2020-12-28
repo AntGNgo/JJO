@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Sans+Pro:wght@700&display=swap');
+
+/*     font-family: 'Manrope', sans-serif;
+
+    font-family: 'Source Sans Pro', sans-serif; */
+
+:root {
+    --color-btn: #296ffb;
+    --color-text-white: #ffffff;
+    --color-text-gray: #727272;
+    --color-offwhite: #aaaaaa;
+}
+
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 40vh;
+    background: url('./assets/hero-image.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-text-white);
+    font-family: 'Manrope', sans-serif;
+}
+
+.header__content {
+    width: 85vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Source SansePro', sans-serif;
+    font-size: 2rem;
+}
+
+/* Nav */
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+li a{
+    color: var(--color-text-white);
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.login {
+    /* display: inline-block; */
+    border-radius: 10px;
+    background-color: var(--color-btn);
+    color: var(--color-text-white);
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Hero */
+
+.hero {
+    position: absolute;
+    top: 60%;
+    transform: translateY(60%);
+}
+
+.leading-text {
+    font-size: 3rem;
+}
+
+.sub-text {
+    font-weight: 400;
+}
+
+.cta {
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--color-btn);
+    color: var(--color-text-white);
+    text-decoration: none;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+}
+
+/* Offers */
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.offers__header {
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3rem;
+
+}
+
+.offers__heading {
+    font-size: 2rem;
+}
+
+/* Jobs */
+.jobs {
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.gray-div {
+    border-left: 2px solid var(--color-offwhite);
+}
+
+/* Card styling */
+
+.job {
+    width: 450px;
+    color: var(--color-text-gray);
+}
+
+.job__header {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.job__title {
+    font-size: 1.2rem;
+    color: var(--color-btn);
+    margin-bottom: 5px;
+}
+
+.job__info {
+    margin-top: 10px;
+    align-items: flex-end;
+}
+
+
+
+
+
+/* Companies */
+.companies {
+    margin-top: 20rem;
+}
+
+/* Utils */
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
