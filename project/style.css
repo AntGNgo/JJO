@@ -11,6 +11,16 @@
     --color-offwhite: #aaaaaa;
 }
 
+/* Utils */
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
 
 /* All */
 
@@ -36,6 +46,10 @@ ul li a {
     text-decoration: none;
 }
 
+.hamburger {
+    display: none;
+}
+
 /* Header */
 
 header {
@@ -45,12 +59,12 @@ header {
     background-position: center;
     color: var(--color-text-white);
     font-family: 'Manrope', sans-serif;
+    position: relative;
 }
 
 .header__content {
     width: 85vw;
     margin: 0 auto;
-    position: relative;
 }
 
 header h1 {
@@ -91,8 +105,8 @@ nav li a{
 
 .hero {
     position: absolute;
-    top: 60%;
-    transform: translateY(60%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .leading-text {
@@ -147,7 +161,7 @@ main {
 /* Card styling */
 
 .job {
-    width: 450px;
+    width: 400px;
     color: var(--color-text-gray);
 }
 
@@ -166,10 +180,12 @@ main {
 .job__info {
     margin-top: 10px;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .job__btn {
     color: var(--color-text-white);
+    margin-left: 10px;
     font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
@@ -244,6 +260,13 @@ main {
     align-items: center;
 }
 
+.newsletter__input input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+}
+
 .subscribe-btn {
     display: inline-block;
     margin-left: 20px;
@@ -272,13 +295,140 @@ footer ul li a {
     color: var(--color-text-gray)
 }
 
+@media screen and (max-width: 1480px) {
+    .hero {
+        width: 85%;
+        padding: 20px;
+        background: rgba(0, 0, 0, .5);
+    }
+    .jobs {
+        flex-direction: column;
+        align-items: space-around;
+        height: 500px;
+    }
 
-/* Utils */
+    .job {
+        width: 85vw;
+    }
 
-.flex {
-    display: flex;
+    .job__btn {
+        display: none;
+    }
+
+    .gray-div {
+        border-left: 0px;
+        border-bottom: 1px solid var(--color-offwhite);
+    }
+
+    .company-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.col {
-    flex-direction: column;
-}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    /* body, html {
+        overflow-x: hidden;
+    } */
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    nav .flex {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .line {
+        width: 25px;
+        height: 4px;
+        background-color: var(--color-text-white);
+        border-radius: 20px;
+        margin-bottom: 5px;
+    }
+
+    header {
+        background: black;
+        height: 70vh;
+    }
+
+    .hero {
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+    }
+
+    .offers__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jobs {
+        flex-direction: column;
+        align-items: space-around;
+        height: 700px;
+    }
+
+    .job {
+         margin-bottom: 2rem;
+        width: 85vw;
+    }
+
+    .job__btn {
+        display: none;
+    }
+
+    .gray-div {
+        border-left: 0px;
+        border-bottom: 1px solid var(--color-offwhite);
+    }
+
+    .company-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    } */
+
+    .newsletter {
+        height: 500px;
+    }
+
+    .newsletter h4 {
+        font-size: 2rem;
+    }
+
+    .newsletter p {
+        width: 80%;
+    }
+
+    .newsletter__input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subscribe-btn {
+        margin: 15px 0 0 0;
+    }
+
+    footer .flex{
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
