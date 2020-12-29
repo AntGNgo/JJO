@@ -12,7 +12,7 @@
 }
 
 
-/* Resets */
+/* All */
 
 * {
     margin: 0;
@@ -22,6 +22,18 @@
 
 body {
     font-family: 'Manrope', sans-serif;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+img {
+    min-width: 100%;
+}
+
+ul li a {
+    text-decoration: none;
 }
 
 /* Header */
@@ -59,7 +71,7 @@ nav ul {
     list-style-type: none;
 }
 
-li a{
+nav li a{
     color: var(--color-text-white);
     text-decoration: none;
     margin-left: 1rem;
@@ -117,10 +129,6 @@ main {
 
 }
 
-.offers__heading {
-    font-size: 2rem;
-}
-
 /* Jobs */
 .jobs {
     margin-top: 3rem;
@@ -155,14 +163,54 @@ main {
     align-items: flex-end;
 }
 
-
+.job__btn {
+    color: var(--color-text-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: var(--color-btn);
+    border-radius: 10px;
+    padding: 3px 10px;
+    box-shadow: 3px 3px 20px #296ffb41;
+}
 
 
 
 /* Companies */
-.companies {
-    margin-top: 20rem;
+
+.companies__header {
+    margin-top: 3rem;
 }
+
+.company-list {
+    margin-top: 3rem;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.company {
+    display: inline-block;
+    border: 1px solid var(--color-offwhite);
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.company-link {
+    align-items: center;
+    justify-content: center;
+}
+
+.company-list li a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.company img {
+    height: 50px;
+}
+
 
 /* Utils */
 
