@@ -334,6 +334,10 @@ footer ul li a {
         overflow-x: hidden;
     }
 
+    .hero {
+        background: none;
+    }
+
     h4 {
         font-size: 2rem;
     }
