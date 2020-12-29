@@ -330,16 +330,34 @@ footer ul li a {
 /* Mobile */
 
 @media screen and (max-width: 768px) {
-    /* body, html {
+    body,html {
         overflow-x: hidden;
-    } */
+    }
 
     h4 {
         font-size: 2rem;
     }
 
     nav .flex {
-        display: none;
+        position: absolute;
+        z-index: 1;
+        background: var(--color-text-white);
+        padding: 20px;
+        flex-direction: column;
+        top: 20%;
+        right: -500px;
+        height: 300px;
+        justify-content: space-between;
+        border-radius: 10px 0 0 10px;
+        transition: all .2s;
+    }
+
+    nav .active {
+        right: 0px;
+    }
+
+    nav ul li a {
+        color: black;
     }
 
     .hamburger {
@@ -394,10 +412,10 @@ footer ul li a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-    } */
+    }
 
     .newsletter {
-        height: 500px;
+        height: 400px;
     }
 
     .newsletter h4 {
@@ -417,7 +435,7 @@ footer ul li a {
         margin: 15px 0 0 0;
     }
 
-    footer .flex{
+    footer .flex {
         display: grid;
         grid-template-columns: repeat(3, 100px);
 
@@ -425,10 +443,4 @@ footer ul li a {
         justify-content: center;
         align-items: center;
     }
-
-
-
-
-
-
-
+}
